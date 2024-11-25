@@ -6,18 +6,9 @@ const Contacto = () => {
         <div className="contacto-container">
             {/* Sección del logo */}
             <div className="logo-section">
-                <img src="ruta_a_logo" alt="Logo" className="logo-img" />
                 <h1>ANDREY GAVIRIA</h1>
             </div>
-            
-            {/* Sección del paisaje */}
-            <div className="paisaje">
-                <div className="cielo">
-                    <div className="nube"></div>
-                    <div className="nube"></div>
-                </div>
-                <div className="tierra"></div>
-            </div>
+
 
             {/* Formulario de contacto */}
             <div className="form-section">

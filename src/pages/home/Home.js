@@ -1,12 +1,12 @@
 import React from "react";
-import Presentacion from "../../components/Presentacion"; // Asegúrate de que esta ruta es correcta
-import ProyectosRecientes from "../../components/ProyectosRecientes";
 import Contacto from "../../components/Contacto";
+import Presentacion from "../../components/Presentacion";
+import ProyectosRecientes from "../../components/ProyectosRecientes";
+
 
 const Home = () => {
     return (
         <div className="container">
-            {/* Aquí se renderiza el componente Presentacion */}
             <Presentacion />
             <ProyectosRecientes />
             <Contacto />

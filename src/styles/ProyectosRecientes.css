@@ -1,107 +1,104 @@
-/* Estilos generales */
+/* Fondo general */
 .proyectos-container {
-    display: flex;
-    background-color: #d3e8f3;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #0f4c75, #3282b8); /* Fondo degradado azul llamativo */
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Sidebar */
 .sidebar {
-    width: 20%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .sidebar h2 {
-    font-size: 1.5em;
-    color: #34597a;
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif; /* Tipografía más moderna */
+  color: #bbe1fa;
 }
 
 .ia-image {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .ia-image img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .ia-image p {
-    font-weight: bold;
-    color: #34597a;
+  font-weight: bold;
+  color: #bbe1fa;
+  font-size: 1.2em;
 }
 
-.sonido-button {
-    background-color: white;
-    color: #34597a;
-    border: 1px solid #34597a;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.sonido-button:hover {
-    background-color: #34597a;
-    color: white;
-}
-
-/* Main Content */
+/* Zona de proyectos */
 .proyectos-main {
-    width: 80%;
-}
-
-.categorias {
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #34597a;
+  margin: 20px auto;
+  width: 100%;
 }
 
 .proyectos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* Tarjetas de proyecto */
 .proyecto-card {
-    background-color: #7a92a5;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    color: white;
-    font-size: 0.9em;
+  background: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.proyecto-card.tecnologia {
-    background-color: #2b4c3f;
-}
-
-.proyecto-card.arte {
-    background-color: #3c5b75;
-}
-
-.proyecto-card.ciencias {
-    background-color: #b2bbc6;
+.proyecto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .proyecto-icon {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .proyecto-card p {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
-.mas-icono {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.2em;
-    color: white;
+/* Frases inspiradoras */
+.frases-inspiradoras {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.frases-inspiradoras .frase {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4em;
+  color: #bbe1fa;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
